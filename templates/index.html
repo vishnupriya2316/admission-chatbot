@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Chatbot</title>
+</head>
+<body>
+
+<h1>🎓 University Admission Chatbot</h1>
+
+<form method="POST" action="/chat">
+    <input type="text" name="question" placeholder="Ask your question">
+    <button type="submit">Send</button>
+</form>
+
+{% if answer %}
+<h3>Bot: {{ answer }}</h3>
+{% endif %}
+
+</body>
+</html>
